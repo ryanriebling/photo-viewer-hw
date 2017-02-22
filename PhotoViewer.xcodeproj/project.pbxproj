@@ -14,6 +14,8 @@
 		A14AC6EC1E5D5DE3005B81F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A14AC6EA1E5D5DE3005B81F0 /* LaunchScreen.storyboard */; };
 		A14AC6F71E5D5DE3005B81F0 /* PhotoViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14AC6F61E5D5DE3005B81F0 /* PhotoViewerTests.swift */; };
 		A14AC7021E5D5DE3005B81F0 /* PhotoViewerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14AC7011E5D5DE3005B81F0 /* PhotoViewerUITests.swift */; };
+		A14AC7101E5D5F90005B81F0 /* MyImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14AC70F1E5D5F90005B81F0 /* MyImageTableViewCell.swift */; };
+		A14AC7121E5D6236005B81F0 /* MyImageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14AC7111E5D6236005B81F0 /* MyImageTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		A14AC6FD1E5D5DE3005B81F0 /* PhotoViewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoViewerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A14AC7011E5D5DE3005B81F0 /* PhotoViewerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewerUITests.swift; sourceTree = "<group>"; };
 		A14AC7031E5D5DE3005B81F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A14AC70F1E5D5F90005B81F0 /* MyImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyImageTableViewCell.swift; sourceTree = "<group>"; };
+		A14AC7111E5D6236005B81F0 /* MyImageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyImageTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				A14AC6E81E5D5DE3005B81F0 /* Assets.xcassets */,
 				A14AC6EA1E5D5DE3005B81F0 /* LaunchScreen.storyboard */,
 				A14AC6ED1E5D5DE3005B81F0 /* Info.plist */,
+				A14AC70F1E5D5F90005B81F0 /* MyImageTableViewCell.swift */,
+				A14AC7111E5D6236005B81F0 /* MyImageTableViewController.swift */,
 			);
 			path = PhotoViewer;
 			sourceTree = "<group>";
@@ -263,6 +269,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A14AC6E41E5D5DE3005B81F0 /* ViewController.swift in Sources */,
+				A14AC7101E5D5F90005B81F0 /* MyImageTableViewCell.swift in Sources */,
+				A14AC7121E5D6236005B81F0 /* MyImageTableViewController.swift in Sources */,
 				A14AC6E21E5D5DE3005B81F0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

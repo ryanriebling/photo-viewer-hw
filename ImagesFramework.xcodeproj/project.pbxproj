@@ -10,6 +10,8 @@
 		A13A98AA1E6E6C8A002B145A /* ImagesFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13A98A01E6E6C8A002B145A /* ImagesFramework.framework */; };
 		A13A98AF1E6E6C8A002B145A /* ImagesFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13A98AE1E6E6C8A002B145A /* ImagesFrameworkTests.swift */; };
 		A13A98B11E6E6C8A002B145A /* ImagesFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = A13A98A31E6E6C8A002B145A /* ImagesFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A13A98BB1E6E6CEF002B145A /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13A98BA1E6E6CEF002B145A /* ImageManager.swift */; };
+		A13A98BD1E6E70AD002B145A /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A13A98BC1E6E70AD002B145A /* Media.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		A13A98A91E6E6C8A002B145A /* ImagesFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImagesFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A13A98AE1E6E6C8A002B145A /* ImagesFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesFrameworkTests.swift; sourceTree = "<group>"; };
 		A13A98B01E6E6C8A002B145A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A13A98BA1E6E6CEF002B145A /* ImageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
+		A13A98BC1E6E70AD002B145A /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,7 @@
 		A13A98961E6E6C8A002B145A = {
 			isa = PBXGroup;
 			children = (
+				A13A98BC1E6E70AD002B145A /* Media.xcassets */,
 				A13A98A21E6E6C8A002B145A /* ImagesFramework */,
 				A13A98AD1E6E6C8A002B145A /* ImagesFrameworkTests */,
 				A13A98A11E6E6C8A002B145A /* Products */,
@@ -73,6 +78,7 @@
 			children = (
 				A13A98A31E6E6C8A002B145A /* ImagesFramework.h */,
 				A13A98A41E6E6C8A002B145A /* Info.plist */,
+				A13A98BA1E6E6CEF002B145A /* ImageManager.swift */,
 			);
 			path = ImagesFramework;
 			sourceTree = "<group>";
@@ -149,6 +155,7 @@
 					A13A989F1E6E6C8A002B145A = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = W8W5FQR263;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					A13A98A81E6E6C8A002B145A = {
@@ -181,6 +188,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A13A98BD1E6E70AD002B145A /* Media.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,6 +206,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A13A98BB1E6E6CEF002B145A /* ImageManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +331,7 @@
 		A13A98B51E6E6C8A002B145A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = W8W5FQR263;
@@ -334,6 +344,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.uw.pce.riebling.ImagesFramework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -341,6 +352,7 @@
 		A13A98B61E6E6C8A002B145A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = W8W5FQR263;
@@ -360,6 +372,7 @@
 		A13A98B81E6E6C8A002B145A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = W8W5FQR263;
 				INFOPLIST_FILE = ImagesFrameworkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -372,6 +385,7 @@
 		A13A98B91E6E6C8A002B145A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = W8W5FQR263;
 				INFOPLIST_FILE = ImagesFrameworkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

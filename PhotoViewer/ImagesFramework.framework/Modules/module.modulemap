@@ -1,0 +1,10 @@
+framework module ImagesFramework {
+  umbrella header "ImagesFramework.h"
+
+  export *
+  module * { export * }
+}
+
+module ImagesFramework.Swift {
+    header "ImagesFramework-Swift.h"
+}

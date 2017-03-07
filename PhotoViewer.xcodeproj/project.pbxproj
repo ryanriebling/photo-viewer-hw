@@ -16,6 +16,9 @@
 		A14AC7021E5D5DE3005B81F0 /* PhotoViewerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14AC7011E5D5DE3005B81F0 /* PhotoViewerUITests.swift */; };
 		A14AC7101E5D5F90005B81F0 /* MyImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14AC70F1E5D5F90005B81F0 /* MyImageTableViewCell.swift */; };
 		A14AC7121E5D6236005B81F0 /* MyImageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14AC7111E5D6236005B81F0 /* MyImageTableViewController.swift */; };
+		A18213701E6E80FC0073BCC9 /* ImagesFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A182136F1E6E80FC0073BCC9 /* ImagesFramework.framework */; };
+		A18213711E6E81040073BCC9 /* ImagesFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A182136F1E6E80FC0073BCC9 /* ImagesFramework.framework */; };
+		A18213721E6E81040073BCC9 /* ImagesFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A182136F1E6E80FC0073BCC9 /* ImagesFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,31 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		A13A98E81E6E8037002B145A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = "";
+			dstSubfolderSpec = 0;
+			files = (
+				A18213701E6E80FC0073BCC9 /* ImagesFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		A18213731E6E81040073BCC9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A18213721E6E81040073BCC9 /* ImagesFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		A14AC6DE1E5D5DE3005B81F0 /* PhotoViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A14AC6E11E5D5DE3005B81F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +79,7 @@
 		A14AC7031E5D5DE3005B81F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A14AC70F1E5D5F90005B81F0 /* MyImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyImageTableViewCell.swift; sourceTree = "<group>"; };
 		A14AC7111E5D6236005B81F0 /* MyImageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyImageTableViewController.swift; sourceTree = "<group>"; };
+		A182136F1E6E80FC0073BCC9 /* ImagesFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImagesFramework.framework; path = PhotoViewer/ImagesFramework.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A18213711E6E81040073BCC9 /* ImagesFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +111,7 @@
 		A14AC6D51E5D5DE2005B81F0 = {
 			isa = PBXGroup;
 			children = (
+				A182136F1E6E80FC0073BCC9 /* ImagesFramework.framework */,
 				A14AC6E01E5D5DE3005B81F0 /* PhotoViewer */,
 				A14AC6F51E5D5DE3005B81F0 /* PhotoViewerTests */,
 				A14AC7001E5D5DE3005B81F0 /* PhotoViewerUITests */,
@@ -141,6 +172,8 @@
 				A14AC6DA1E5D5DE2005B81F0 /* Sources */,
 				A14AC6DB1E5D5DE2005B81F0 /* Frameworks */,
 				A14AC6DC1E5D5DE2005B81F0 /* Resources */,
+				A13A98E81E6E8037002B145A /* Embed Frameworks */,
+				A18213731E6E81040073BCC9 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -422,6 +455,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = W8W5FQR263;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PhotoViewer",
+				);
 				INFOPLIST_FILE = PhotoViewer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.uw.pce.riebling.PhotoViewer;
@@ -435,6 +472,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = W8W5FQR263;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PhotoViewer",
+				);
 				INFOPLIST_FILE = PhotoViewer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.uw.pce.riebling.PhotoViewer;
@@ -520,6 +561,7 @@
 				A14AC7081E5D5DE3005B81F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A14AC7091E5D5DE3005B81F0 /* Build configuration list for PBXNativeTarget "PhotoViewerTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +570,7 @@
 				A14AC70B1E5D5DE3005B81F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A14AC70C1E5D5DE3005B81F0 /* Build configuration list for PBXNativeTarget "PhotoViewerUITests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +579,7 @@
 				A14AC70E1E5D5DE3005B81F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
